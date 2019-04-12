@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-rsession-proxy",
+    name="jupyter-vscode-proxy",
     version='1.0dev',
-    url="https://github.com/jupyterhub/jupyter-rsession-proxy",
-    author="Ryan Lovett & Yuvi Panda",
-    description="Jupyter extension to proxy RStudio's rsession",
+    url="https://github.com/bioinformaticsbejo/jupyter-vscode-proxy",
+    author="Ryan Lovett; Yuvi Panda; Saulo Alves @ Bejo Zaden BV",
+    description="Jupyter extension to proxy VScode session",
     packages=setuptools.find_packages(),
 	keywords=['Jupyter'],
 	classifiers=['Framework :: Jupyter'],
@@ -14,11 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'rstudio = jupyter_rsession_proxy:setup_rstudio',
-            'shiny = jupyter_rsession_proxy:setup_shiny'
+            'vscode = jupyter_vscode_proxy:setup_vscode'
         ]
     },
     package_data={
-        'jupyter_rsession_proxy': ['icons/*'],
+        'jupyter_vscode_proxy': ['icons/*'],
     },
 )

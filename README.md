@@ -1,10 +1,10 @@
-# jupyter-rsession-proxy
+# jupyter-vscode-proxy
 
-**jupyter-rsession-proxy** provides Jupyter server and notebook extensions to proxy RStudio.
+**jupyter-vscode-proxy** provides Jupyter server and notebook extensions to proxy RStudio.
 
 ![Screenshot](screenshot.png)
 
-If you have a JupyterHub deployment, jupyter-rsession-proxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter.
+If you have a JupyterHub deployment, jupyter-vscode-proxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter.
 Note that [RStudio Server Pro](https://www.rstudio.com/products/rstudio-server-pro/architecture) has more featureful authentication and spawning than the standard version, in the event that you do not want to use Jupyter's.
 
 ## Installation
@@ -16,11 +16,11 @@ Use conda `conda install rstudio` or [download](https://www.rstudio.com/products
 
 Note that rstudio server is needed to work with this extension.
 
-### Install jupyter-rsession-proxy
+### Install jupyter-vscode-proxy
 
 Install the library:
 ```
-pip install jupyter-rsession-proxy
+pip install jupyter-vscode-proxy
 ```
 
 The Dockerfile contains an example installation on top of [jupyter/r-notebook](https://github.com/jupyter/docker-stacks/tree/master/r-notebook).
