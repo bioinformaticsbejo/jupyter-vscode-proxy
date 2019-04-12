@@ -16,20 +16,9 @@ def setup_vscode():
 
         other_paths = []
 
-        if shutil.which('vscode'):
-            executable = 'vscode'
-        else:
-            for op in other_paths:
-                if os.path.exists(op):
-                    executable = op
-                    break
-            else:
-                raise FileNotFoundError('Can not find rsession in PATH')
-
         envi = _get_vscode_env(port)
 
         return [
-            executable,
             'code-server',
             '--allow-http',
             '--no-auth',
